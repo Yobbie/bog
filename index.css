@@ -1,0 +1,115 @@
+nav {
+width: 100%;
+padding: 10px 10%;
+display: flex;
+position: absolute;
+}
+.menu-icon {
+   width: 50px;
+   height: 40px;
+   margin-left: 5px;
+}
+.menu-list { 
+   display: none;
+ }
+ .menu-list.active {
+   display: block;
+ }
+ .menu-btn {
+   color: #8f6e94;
+   width: 150px;
+   background-color: #2e2430;
+   padding: 5px 0 5px;
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+   margin-top: 2px;
+   margin-bottom: 2px;  
+   margin-left: 5px;
+ }
+ .menu-btn:hover {
+   color: #0d0e0d;
+    background-color: #b189b6;
+ }
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0d0e0d;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+#bj-lg {
+   opacity: 0;
+   animation-name: flames;
+   animation-duration: 0.5s;
+   animation-iteration-count: 3;
+ }
+ 
+ @keyframes flames {
+   0% { opacity: 1; }
+   50% { opacity: 0.5; }
+   100% { opacity: 1; }
+ }
+ 
+/* Keyframes for the animation */
+@keyframes fadeInOut {
+   0% {
+     opacity: 0; /* Text is invisible at the start of the animation */
+   }
+   50% {
+     opacity: 1; /* Text is fully visible halfway through the animation */
+   }
+   100% {
+     opacity: 0; /* Text is invisible at the end of the animation */
+   }
+ }
+ 
+ /* Apply the animation to the text */
+ .animated-text {
+   color: #7f9ea8;
+   animation-name: fadeInOut; /* Use the keyframe animation */
+   animation-duration: 5s; /* Animation lasts for 2 seconds */
+   animation-timing-function: ease-in-out; /* Animation starts and ends slowly */
+   animation-iteration-count: infinite; /* Animation repeats indefinitely */
+ }
+ b {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: large;
+   font-weight: bolder;
+   height: 20px;
+   color: #adff2f;
+ }
+ 
+ h1 {
+    color: #8f6e94;  
+
+}
+.video-text-container {
+height: 20vh;
+width: 100%;
+position: relative;
+}
+.video-text-container video {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+.video-text-container .text-container {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 50px;
+   text-transform: uppercase;
+   background-color: #0d0e0d;
+   color: #ffffff;
+   mix-blend-mode: multiply;
+}
